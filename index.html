@@ -3,10 +3,183 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My First Web Page</title>
+    <title>Full HTML Example</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    <script>
+      function showAlert() {
+        alert("Hello from JavaScript!");
+      }
+    </script>
   </head>
   <body>
-    <h1>Hello, World!</h1>
-    <p>Aditya</p>
+    <!-- Headings -->
+    <h1>Main Heading</h1>
+    <h2>Sub Heading</h2>
+    <h3>Section Title</h3>
+    <h4>Subsection</h4>
+    <h5>Note</h5>
+    <h6>Minor Note</h6>
+
+    <!-- Paragraphs, line break, and horizontal rule -->
+    <p>This is a paragraph of text.</p>
+    <p>This is another paragraph.<br />This uses a line break.</p>
+    <hr />
+
+    <!-- Formatting Tags -->
+    <p>
+      <strong>Bold</strong>, <em>Italic</em>, <u>Underlined</u>,
+      <mark>Highlighted</mark>, <small>Small text</small>,
+      <del>Deleted text</del>, <ins>Inserted text</ins>, <sub>Subscript</sub>,
+      <sup>Superscript</sup>
+    </p>
+
+    <!-- Lists -->
+    <ul>
+      <li>Unordered list item</li>
+      <li>Another item</li>
+    </ul>
+
+    <ol>
+      <li>Ordered list item</li>
+      <li>Another item</li>
+    </ol>
+
+    <dl>
+      <dt>Term</dt>
+      <dd>Definition of the term</dd>
+    </dl>
+
+    <!-- Links and Images -->
+    <a href="https://example.com" target="_blank">Visit Example</a><br />
+    <img
+      src="https://via.placeholder.com/150"
+      alt="Placeholder Image"
+      width="150"
+    />
+
+    <!-- Table -->
+    <table border="1">
+      <caption>
+        Sample Table
+      </caption>
+      <thead>
+        <tr>
+          <th>Header 1</th>
+          <th>Header 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Data 1</td>
+          <td>Data 2</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2">Footer</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Form -->
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Form Example</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br />
+
+        <input type="checkbox" id="subscribe" name="subscribe" />
+        <label for="subscribe">Subscribe to newsletter</label><br />
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" /> Male
+        <input type="radio" name="gender" value="female" /> Female<br />
+
+        <label for="color">Pick a color:</label>
+        <input type="color" id="color" /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" /><br />
+
+        <label for="country">Country:</label>
+        <select id="country">
+          <option value="in">India</option>
+          <option value="us">USA</option></select
+        ><br />
+
+        <textarea rows="4" cols="50" placeholder="Write something..."></textarea
+        ><br />
+
+        <button type="button" onclick="showAlert()">Click Me</button>
+        <input type="submit" value="Submit" />
+      </fieldset>
+    </form>
+
+    <!-- Semantic Tags -->
+    <header>
+      <h2>Header Section</h2>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <h3>Article Title</h3>
+        <p>Article content here...</p>
+      </article>
+
+      <section>
+        <h4>Section Title</h4>
+        <p>Section content here...</p>
+      </section>
+
+      <aside>
+        <h4>Sidebar</h4>
+        <p>Some extra info...</p>
+      </aside>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 My Website</p>
+    </footer>
+
+    <!-- Multimedia -->
+    <video width="320" height="240" controls>
+      <source src="sample.mp4" type="video/mp4" />
+      Your browser does not support video.
+    </video>
+
+    <audio controls>
+      <source src="sample.mp3" type="audio/mp3" />
+      Your browser does not support audio.
+    </audio>
+
+    <!-- Details & Summary -->
+    <details>
+      <summary>Click to expand</summary>
+      <p>This is hidden content.</p>
+    </details>
+
+    <!-- Script and Noscript -->
+    <script>
+      console.log("Page loaded");
+    </script>
+
+    <noscript>
+      <p>Please enable JavaScript to view this content properly.</p>
+    </noscript>
   </body>
 </html>
